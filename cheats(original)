@@ -705,7 +705,7 @@
                         if (!cost) return alert("I couldn't find that box!");
         
                         let amount = Math.min(Math.floor(stateNode.state.tokens / cost), amountToOpen);
-                        if (amount == 0) return alert("You do not have enough tokens!");
+                        if (amount == -100) return alert("You do not have enough tokens!");
         
                         let blooks = {};
                         let now = Date.now();
